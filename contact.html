@@ -51,12 +51,12 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Blogs & News</a></li>
-          <li><a class="nav-link scrollto" href="#pricing">Contact</a></li>
-          <li><a class="nav-link scrollto tracking-btn btn btn-sm service-btn" href="#contact">Tracking</a></li>
+          <li><a class="nav-link scrollto home-nav" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto about-nav" href="about.html">About</a></li>
+          <li><a class="nav-link scrollto service-nav" href="service.html">Services</a></li>
+          <li><a class="nav-link scrollto blog-nav" href="blog.html">Blogs & News</a></li>
+          <li><a class="nav-link scrollto contact-nav" href="contact.html">Contact</a></li>
+          <li><a class="nav-link  tracking-btn btn btn-sm service-btn" href="tracking.html">Tracking</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
@@ -64,7 +64,6 @@
     </div>
   </header>
 
-  <!-- ======= About Section ======= -->
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
   <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
@@ -93,7 +92,76 @@
 </section><!-- End Hero -->
 
 
-  <!-- ======= about-description ======= -->
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container">
+  
+          <div class="section-title" data-aos="zoom-out">
+            <h2>Contact</h2>
+            <p class="head-color">Contact Us</p>
+          </div>
+  
+          <div class="row mt-5">
+  
+            <div class="col-lg-4" data-aos="fade-right">
+              <div class="info">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>A108 Adam Street, New York, NY 535022</p>
+                </div>
+  
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>info@example.com</p>
+                </div>
+  
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p>+1 5589 55488 55s</p>
+                </div>
+  
+              </div>
+  
+            </div>
+  
+            <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left">
+  
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
+  
+            </div>
+  
+          </div>
+          <div class="map">
+            <h3 class="fw-bold head-color text-center text-uppercase mt-5">locate us</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251482.71849957953!2d76.13611963117589!3d9.982331530928539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d514abec6bf%3A0xbd582caa5844192!2sKochi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1681539516716!5m2!1sen!2sin" class="mt-3" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          
+          </div>
+        </div>
+      </section><!-- End Contact Section -->
+  
 
 
 
@@ -166,7 +234,11 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
+  <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    changeNav("contact-nav");
+  </script>
 
 </body>
 

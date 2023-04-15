@@ -1,0 +1,26 @@
+.track-box{
+    padding: 50px;
+    border: 1px solid #039aef;
+}
+.track-box form{
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+}
+.track-box form input{
+    padding: 15px;
+    border-radius: 30px;
+    background-color: white;
+}
+.track-box form  button{
+    padding: 15px 30px;
+}
+@media (max-width: 992px){
+    .track-box{
+        padding: 30px;
+    }
+    .track-box form  button{
+        margin: 0 auto;
+        display: block;
+    }
+}
